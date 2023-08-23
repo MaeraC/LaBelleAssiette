@@ -376,6 +376,13 @@ header div img {
     margin-top: 15px;
     margin-bottom: 5px;
 }
+@media screen and (max-width: 1024px) {
+    .avis {
+        background: url(assets/avis2.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
 @media screen and (max-width: 900px) {
     .avis .content div {
         width: 80%;
@@ -391,6 +398,9 @@ header div img {
         font-size: 30px;
         padding: 40px 0;
         padding-bottom: 20px;
+    }
+    .avis h2 {
+        padding: 60px 10px;
     }
 }
 
