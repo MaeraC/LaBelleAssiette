@@ -152,7 +152,7 @@ header div img {
 }
 @media screen and (max-width: 600px) {
     header div img {
-        width: 80%;
+        width: 100%;
     }
 }
 .header-menu {
@@ -197,6 +197,12 @@ header div img {
 .header-menu .button:hover {
     background: #012b23;
  }
+@media screen and (max-width: 1024px) {
+    .header-boutique {
+        background: url(assets/boutique.jpg);
+        background-size: cover;
+    }
+}
 
  .nav .menu2 {
     position: fixed;
@@ -396,11 +402,8 @@ header div img {
 @media screen and (max-width: 650px) {
     .avis h2 {
         font-size: 30px;
-        padding: 40px 0;
+        padding: 40px 10px;
         padding-bottom: 20px;
-    }
-    .avis h2 {
-        padding: 60px 10px;
     }
 }
 
@@ -628,14 +631,17 @@ footer ul  li {
     .boutique figure {
         width: 90%;
     }
+    .header-boutique {
+        height: 300px;
+    }
 }
 @media screen and (max-width: 500px)  {
-    .boutique figure {
-        width: 90%;
-    }
     .boutique p {
         margin: 20px;
         line-height: 25px;
+    }
+    .header-boutique h1 {
+        font-size: 40px;
     }
 }
 @media screen and (max-width: 400px)  {
