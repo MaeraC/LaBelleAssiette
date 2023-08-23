@@ -143,6 +143,11 @@ header div img {
     height: 50%;
     margin-top: 50px;
 }
+@media screen and (max-width: 600px) {
+    header div img {
+        width: 80%;
+    }
+}
 .header-menu {
     background: url(assets/menu.jpg) fixed;
     background-size: cover;
@@ -186,6 +191,58 @@ header div img {
     background: #012b23;
  }
 
+ .nav .menu2 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: white;
+    z-index: 99;
+    flex-direction: column;
+    align-items: end;
+    padding: 20px;
+    width: 50%;
+    height: 100vh;
+  }
+  .nav .menu2 a , nav .menu2 .cart{
+    display: inline-block;
+    margin: 10px;
+    color: black;
+  }
+  .nav .menu2 a:hover , nav .menu2 .cart:hover {
+    color: #2c655b;
+    text-decoration: underline;
+  }
+  .nav .menu2 .res-btn {
+    margin-top: 20px;
+  }
+  
+  .close-menu {
+    background-color: #ffffff96;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    z-index: 99;
+    width: 18px;
+    height: 18px;
+    padding: 2px;
+    color: black;
+  }
+  .close-menu:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .open-burger {
+    background: none;
+  }
+  .header-boutique .open-burger ,
+  .header-menu .open-burger {
+    background: #012b23;
+  }
+  .burger-btns {
+    display: none;
+  }
+
 
 
 
@@ -228,6 +285,43 @@ header div img {
     background: #2c655b;
     color: white;
     border: white 2px solid;
+}
+@media screen and (max-width: 900px)  {
+    .produits .content {
+        flex-direction: column-reverse;
+    }
+    .produits .img2 {
+        display: none;
+    }
+    .produits .img1 {
+        width: 100%;
+        height: 300px;
+    }
+    .produits .text {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 650px)  {
+    .produits .text p {
+        margin: 20px;
+        margin-bottom: 40px;
+    }
+    .produits .text {
+        padding: 20px;
+        padding-bottom: 40px;
+    }
+    .produits .text h2 {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 400px)  {
+    .produits .text p {
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    .produits .text h2 {
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -275,6 +369,23 @@ header div img {
     margin-top: 15px;
     margin-bottom: 5px;
 }
+@media screen and (max-width: 900px) {
+    .avis .content div {
+        width: 80%;
+        margin: 20px;
+    }
+    .avis .content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 650px) {
+    .avis h2 {
+        font-size: 30px;
+        padding: 40px 0;
+        padding-bottom: 20px;
+    }
+}
 
 
 
@@ -305,6 +416,16 @@ header div img {
 .contact div p {
     line-height: 25px;
 }
+@media screen and (max-width: 900px)  {
+    .contact {
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact  div {
+        margin: 30px;
+    }
+}
 
 
 
@@ -321,6 +442,16 @@ footer ul {
 }
 footer ul  li {
     font-size: 12px;
+}
+@media screen and (max-width: 900px) {
+    footer ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
 }
 
 
@@ -447,6 +578,27 @@ footer ul  li {
     justify-content: center;
     line-height: 30px;
 }
+@media screen and (max-width: 900px)  {
+    .boutique figure {
+        width: 40%;
+    }
+}
+@media screen and (max-width: 600px)  {
+    .boutique figure {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 500px)  {
+    .boutique figure {
+        width: 90%;
+    }
+    .boutique p {
+        margin: 20px;
+        line-height: 25px;
+    }
+}
+
+
 
 
 
