@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Belle Assiette</title>
+    <link rel="icon" href="favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Philosopher&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/161539ed12.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="favicon.png" alt="Logo La Belle Assiette">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="pages/boutique.html">Boutique</a></li>
+                <li><a href="pages/menu.html">Menu</a></li>
+                <li class="cart">Panier</li>
+                <li><a href="pages/contact.html">Contact</a></li>
+                <li class="dot"></li>
+                <button class="button res-btn">Réservation</button>
+            </ul>
+        </nav>
+       
+        <div>
+            <img src="assets/logo.png" alt="Logo La Belle Assiette">
+        </div>
+    </header>
+
+    <aside class="panier">
+        <i class="fa-regular fa-circle-xmark"></i>
+        <h1>Mon panier</h1>
+        <span></span>
+        <p>Vous n'avez pas encore d'articles dans votre panier.</p>
+    </aside>
+
+    <aside class="reservation">
+        <i class="fa-regular fa-circle-xmark"></i>
+        <h1>Réservation</h1>
+        <span></span>
+
+        <form action="">
+            <input type="text" placeholder="Votre nom">
+            <input type="email" placeholder="Votre e-mail">
+            <input type="tel" placeholder="Votre numéro de téléphone">
+            <label for="date">Votre date</label>
+            <input type="date">
+            <label for="time">Votre heure d'arrivée</label>
+            <input type="time">
+            <button class="button">Envoyer</button>
+        </form>
+    </aside>
+
+    <section class="produits">
+        <div class="content">
+            <div class="img1"></div>
+            <div class="text appear" data-delai="500">
+                <h2>Des produits frais et locaux</h2>
+                <p>À la maison, la fraîcheur et l'authenticité règnent. Nos plats faits maison sont le reflet de notre engagement envers des ingrédients frais et locaux. Chaque bouchée raconte l'histoire de notre région et de notre cuisine simple et authentique. </p>
+                <a href="pages/menu.html" class="button">Voir le menu</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="text appear" data-delai="500">
+                <h2>La meilleure cuvée locale</h2>
+                <p>Chez nous, la tradition est de sélectionner les meilleurs vins locaux qui raconte l'histoire de notre région. Chaque verre représente notre terroir, imprégné de soleil, de pluie et d'amour. Chaue gorgée est un voyage à travers nos vignobles. Détendez-vous et découvrez nos cuvées locales, une gorgée à la fois. </p>
+                <a href="pages/boutique.html" class="button">Voir la boutique de vins</a>
+            </div>
+            <div class="img2"></div>
+        </div>
+    </section>
+
+    <section class="avis">
+        <h2>Ce que nos clients en disent</h2>
+            <div class="content">
+                <div  class=" appear" data-delai="200">
+                    <p class="p">"Quelle découverte extraordinaire ! Chaque plat était un voyage gustatif en France. Les saveurs étaient incroyablement authentiques, comme si j'étais transportée dans une brasserie parisienne. J'ai adoré le souci du détail dans la présentation des plats. Je recommande vivement ce restaurant à tous les amoureux de la cuisine française !"</p>
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                    <p class="n">- Marie-Claire D.</p>
+                </div>
+                <div class=" appear" data-delai="300">
+                    <p class="p">"Un véritable bijou culinaire ! J'ai été impressionné par la qualité exceptionnelle des plats et l'harmonie parfaite entre les saveurs. Les vins locaux recommandés étaient une révélation, complétant à merveille chaque plat. Chapeau au chef et à l'équipe pour avoir créé un tel endroit où l'on peut vraiment savourer la magie de la cuisine française."</p>
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                    <p class="n">- Thomas G.</p>
+                </div>
+                <div class=" appear" data-delai="400">
+                    <p class="p">"Quel enchantement ! Ce restaurant est un trésor caché pour les amateurs de cuisine française. Le personnel était aux petits soins, offrant des recommandations avisées et une ambiance conviviale. C'est sans aucun doute un lieu où je reviendrai pour me régaler à nouveau et partager cette expérience unique avec mes proches."</p>
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                    <p class="n">- Sophie L.</p>
+                </div>
+            </div>
+    </section>
+
+    <section class="contact">
+        <div class=" appear" data-delai="200">
+            <i class="fa-regular fa-map"></i>
+            <h3>Adresse</h3>
+            <p>134 Avenue de Charles de Gaulle<br>
+            60200 COMPIEGNE</p>
+        </div>
+        <div class=" appear" data-delai="300">
+            <i class="fa-regular fa-envelope"></i>
+            <h3>Contact</h3>
+            <p>01 56 99 86 22<br>
+            contact@labelleassiette.fr<br>
+            <span>Réserver une table</span></p>
+        </div>
+        <div class=" appear" data-delai="400">
+            <i class="fa-regular fa-clock"></i>
+            <h3>Horaires</h3>
+            <p>Du Lundi au Samedi :<br>
+            12h00 - 01h00</p>
+        </div>
+    </section>
+
+    <footer>
+        <ul>
+            <li>Mentions légales</li>
+            <li>©️2023 - Tous droits réservés. La Belle Assiette.</li>
+            <li>Politique de confidentialité</li>
+        </ul>
+    </footer>
+    
+    <script src="js/product.js"></script>
+    <script src="js/fadeAnim.js"></script>
+    <script src="js/openCart.js"></script>
+    <script src="js/openReservation.js"></script>
+</body>
+</html>

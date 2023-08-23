@@ -1,0 +1,573 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Open Sans";
+}
+h1, h2, h3 {
+    font-family: 'Philosopher', sans-serif;
+}
+p, li, a {
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+a {
+    text-decoration: none;
+}
+ul, li {
+    list-style: none;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.button {
+    color: white;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    border: 1px white solid;
+    font-size: 14px;
+    background-color: #2c655b;
+    transition: 0.5s;
+}
+.button:hover {
+    background: #2c655b71;
+    transform: scale(0.95);
+}
+
+
+
+
+
+header {
+    height: 100vh;
+    background: url(assets/header.jpg) no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+header nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 10;
+}
+header nav ul {
+    display: flex;
+    align-items: center;
+}
+header nav ul li a , .cart {
+    color: white;
+    margin: 0 30px;
+    text-transform: uppercase;
+    font-family: 'Philosopher', sans-serif;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+} 
+header nav ul li a:hover , .cart:hover {
+    color: #38ac96;
+}
+.dot {
+    position: absolute;
+    top: 50px;
+    width: 6px;
+    height: 6px;
+    background: #38ac96;
+    border-radius: 50%;
+    transform: translateX(0);
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+} 
+header nav ul li:nth-child(1):hover ~ .dot,
+.header-boutique nav ul li:nth-child(1):hover ~ .dot,
+.header-menu nav ul li:nth-child(1):hover ~ .dot {
+    transform: translateX(60px);
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+header nav ul li:nth-child(2):hover ~ .dot,
+.header-boutique nav ul li:nth-child(2):hover ~ .dot,
+.header-menu nav ul li:nth-child(2):hover ~ .dot  {
+    transform: translateX(195px);
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+header nav ul li:nth-child(3):hover ~ .dot ,
+.header-boutique nav ul li:nth-child(3):hover ~ .dot,
+.header-menu nav ul li:nth-child(3):hover ~ .dot {
+    transform: translateX(320px);
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+header nav ul li:nth-child(4):hover ~ .dot ,
+.header-boutique nav ul li:nth-child(4):hover ~ .dot,
+.header-menu nav ul li:nth-child(4):hover ~ .dot {
+    transform: translateX(430px);
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+header nav ul li:nth-child(5):hover ~ .dot,
+.header-boutique nav ul li:nth-child(5):hover ~ .dot,
+.header-menu nav ul li:nth-child(5):hover ~ .dot  {
+    transform: translateX(560px);
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+header .logo {
+    width: 40px;
+}
+header div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0000009f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header div img {
+    width: 50%;
+    height: 50%;
+    margin-top: 50px;
+}
+.header-menu {
+    background: url(assets/menu.jpg) fixed;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    height: 50vh;
+}
+.header-boutique {
+    background: url(assets/boutique.jpg) fixed;
+    background-size: cover;
+    position: relative;
+    height: 50vh;
+}
+.header-boutique nav , 
+.header-menu nav {
+    background: white;
+}
+.header-boutique nav ul li a , 
+.header-menu nav ul li a, 
+.header-boutique .cart,
+.header-menu .cart  {
+    color: black;
+    margin: 0 30px;
+}
+.header-boutique nav ul li a:hover , 
+.header-menu nav ul li a:hover, 
+.header-boutique .cart:hover,
+.header-menu .cart:hover  {
+    color: #38ac96;
+}
+.header-menu h1 , 
+.header-boutique h1 {
+    font-size: 60px;
+    color: white;
+    letter-spacing: 5px;
+    padding-top: 50px;
+    font-weight: 300;
+}
+.header-boutique .button:hover,
+.header-menu .button:hover {
+    background: #012b23;
+ }
+
+
+
+
+
+
+.produits .content {
+    display: flex;
+}
+.produits .img1 {
+    background: url(assets/produits.jpg);
+    background-size: cover;
+    width: 50%;
+}
+.produits .img2 {
+    background: url(assets/avis.jpg);
+    background-size: cover;
+    width: 50%;
+}
+.produits .text {
+    text-align: center;
+    padding: 80px;
+    width: 50%;
+}
+.produits .text p {
+    margin: 30px 0;
+    margin-bottom: 40px;
+    line-height: 28px;
+}
+.produits .text h2 {
+    font-size: 38px;
+}
+.produits .button {
+    background: none;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 4px 4px 15px #2c655b70;
+    transition: 0.8s;
+}
+.produits .button:hover {
+    background: #2c655b;
+    color: white;
+    border: white 2px solid;
+}
+
+
+
+
+
+
+.avis {
+    background: url(assets/avis2.jpg) fixed;
+    background-size: cover;
+    background-position: center;
+}
+.avis h2 {
+    text-align: center;
+    font-size: 38px;
+    padding: 60px 0;
+    background: #000000ce;
+    color: white;
+}
+.avis .content {
+    width: 100%;
+    padding: 0 40px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-around;
+    background: #000000ce;
+}
+.avis .content div {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.avis .content div p {
+    font-size: 13px;
+    line-height: 22px;
+    text-align: center;
+    color: white;
+    font-weight: 300;
+}
+.avis .content div span i {
+    font-size: 13px;
+    color: #ffc012;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+.contact {
+    padding: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+.contact div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.contact div i {
+    font-size: 40px;
+}
+.contact h3 {
+    text-transform: uppercase;
+    margin: 20px 0;
+    color: #2c655b;
+    font-size: 25px;
+}
+.contact div p {
+    line-height: 25px;
+}
+
+
+
+
+
+footer {
+    background: black;
+    color: white;
+    padding: 10px;
+}
+footer ul {
+    display: flex;
+    justify-content: space-between;
+}
+footer ul  li {
+    font-size: 12px;
+}
+
+
+
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+.menu li {
+    width: 25%;
+    height: 400px;
+    position: relative;
+    margin: 15px;
+}
+.menu h3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #00000052;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 100;
+    font-size: 40px;
+    transition: 0.8s ease-in-out;
+}
+
+.menu h3:hover {
+    color: transparent;
+    background: transparent;
+}
+
+
+
+
+.carte {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+.carte img {
+    width: 80%;
+    border: double 10px #2c655b;
+}
+
+
+
+
+
+.boutique {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.boutique img {
+    height: 300px;
+}
+.boutique figure {
+    width: 20%;
+    margin: 20px;
+    box-shadow: 5px 5px 15px #8080802c;
+    position: relative;
+}
+.boutique figcaption {
+    display: flex;
+    flex-direction: column;
+}
+.boutique h3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    width: 100%;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: transparent;
+    line-height: 28px;
+    font-size: 18px;
+    padding: 0 20px;
+    font-weight: 300;
+    transition: 0.7s;
+}
+.boutique h3:hover {
+    color: white;
+    background: #000000c0;
+}
+.boutique span {
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+    position: absolute;
+    background-color: #2c655b;
+    top: 15px;
+    left: -10px;
+}
+.boutique .button {
+    font-size: 13px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: 15px;
+}
+.boutique .button:hover {
+   background: #012b23;
+}
+.boutique p {
+    margin: 40px 15%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 30px;
+}
+
+
+
+
+.panier , 
+.reservation {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: white;
+    height: 100vh;
+    width: 400px;
+    padding: 40px;
+    z-index: 12;
+    text-align: center;
+    display: none;
+}
+.panier h1 , 
+.reservation h1{
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+.panier span , 
+.reservation span {
+    width: 100%;
+    height: 1px;
+    background-color: #2c655b;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.panier .fa-circle-xmark ,
+.reservation .fa-circle-xmark{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.panier .fa-circle-xmark:hover,
+.reservation .fa-circle-xmark:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+.contact-us {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 40px;
+}
+.contact-us .contact {
+    padding: 0;
+    width: 65%;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact-us form  {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding-right: 40px;
+    border-right: 1px solid rgba(0, 0, 0, 0.233);
+}
+.contact-us form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+.contact-us form input , 
+.reservation form input {
+    height: 35px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-family: "Open Sans";
+}
+.contact-us textarea {
+    padding: 10px;
+    font-family: "Open Sans";
+    margin-bottom: 10px;
+}
+.contact-us .button {
+    height: 40px;
+    cursor: pointer;
+}
+.contact-us .button:hover {
+    background: #012b23;
+}
+
+
+
+
+.reservation {
+    text-align: initial;
+}
+.reservation h1 {
+    text-align: center;
+}
+.reservation form input {
+        width: 100%;
+        margin-top: 5px;
+    }
+ .reservation label {
+        text-align: left;
+        font-size: 13px;
+    }
+.reservation .button {
+    width: 100%;
+    height: 40px;
+}
+.reservation .button:hover {
+    background: #012b23;
+}
+
+
+.appear {
+    opacity: 0;
+    transition: opacity 1s;
+}

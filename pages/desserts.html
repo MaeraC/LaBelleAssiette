@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Belle Assiette</title>
+    <link rel="icon" href="favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Philosopher&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/161539ed12.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+    <header class="header-menu">
+        <nav>
+            <img class="logo" src="../favicon-black.png" alt="Logo La Belle Assiette">
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../pages/boutique.html">Boutique</a></li>
+                <li><a href="../pages/menu.html">Menu</a></li>
+                <li class="cart">Panier</li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+                <li class="dot"></li>
+                <button class="button res-btn">Réservation</button>
+            </ul>
+        </nav>
+        <diV>
+            <h1>La Carte des Desserts</h1>
+        </diV>
+    </header>
+
+    <aside class="panier">
+        <i class="fa-regular fa-circle-xmark"></i>
+        <h1>Mon panier</h1>
+        <span></span>
+        <p>Vous n'avez pas encore d'articles dans votre panier.</p>
+    </aside>
+
+    <aside class="reservation">
+        <i class="fa-regular fa-circle-xmark"></i>
+        <h1>Réservation</h1>
+        <span></span>
+
+        <form action="">
+            <input type="text" placeholder="Votre nom">
+            <input type="email" placeholder="Votre e-mail">
+            <input type="tel" placeholder="Votre numéro de téléphone">
+            <label for="date">Votre date</label>
+            <input type="date">
+            <label for="time">Votre heure d'arrivée</label>
+            <input type="time">
+            <button class="button">Envoyer</button>
+        </form>
+    </aside>
+
+    <div class="carte">
+        <img src="../assets/desserts.a976679951d2cdf541de.png" alt="">
+    </div>
+
+    <footer>
+        <ul>
+            <li>Mentions légales</li>
+            <li>©️2023 - Tous droits réservés. La Belle Assiette.</li>
+            <li>Politique de confidentialité</li>
+        </ul>
+    </footer>
+
+    <script src="../js/openCart.js"></script>
+    <script src="../js/openReservation.js"></script>
+</body>
+</html>
