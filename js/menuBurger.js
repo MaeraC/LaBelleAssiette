@@ -48,6 +48,29 @@ window.addEventListener("DOMContentLoaded", function() {
         menuBurger.appendChild(closeBtn)
 
         isMenuOpen = true
+
+        burgerItem4.addEventListener("click", () => {
+            const cart = document.querySelector(".panier") // modale panier 
+            const closeCart = document.querySelector(".fa-circle-xmark") // bouton pour fermer le panier
+
+            cart.style.display = "block"
+
+            closeCart.addEventListener("click", () => {
+                cart.style.display = "none"
+            })
+
+        })
+
+        burgerItem6.addEventListener("click", () => {
+            const reservation = document.querySelector(".reservation")
+            const closeReservation = reservation.querySelector(".fa-circle-xmark") // bouton pour fermer le panier
+
+            reservation.style.display = "block"
+
+            closeReservation.addEventListener("click", () => {
+                reservation.style.display = "none"
+            })
+        })
     }
 
     function closeMenuBurger() {

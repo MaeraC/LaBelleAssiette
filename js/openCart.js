@@ -1,6 +1,8 @@
-const cart = document.querySelector(".panier")
-const btnCart = document.querySelector(".cart")
-const closeCart = document.querySelector(".fa-circle-xmark")
+const cart = document.querySelector(".panier") // modale panier 
+const btnCart = document.querySelector(".cart") // bouton pour ouvrir le panier 
+const closeCart = document.querySelector(".fa-circle-xmark") // bouton pour fermer le panier
+
+console.log(btnCart)
 
 btnCart.addEventListener("click", () => {
     cart.style.display = "block"
@@ -9,4 +11,7 @@ btnCart.addEventListener("click", () => {
 closeCart.addEventListener("click", () => {
     cart.style.display = "none"
 })
+
+
+
 
