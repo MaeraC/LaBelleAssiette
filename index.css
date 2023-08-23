@@ -685,6 +685,12 @@ footer ul  li {
     text-align: center;
     display: none;
 }
+@media screen and (max-width: 600px) {
+    .panier , 
+.reservation {
+    width: 100%;
+}
+}
 .panier h1 , 
 .reservation h1{
     margin-bottom: 20px;
