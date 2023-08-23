@@ -49,6 +49,13 @@ header {
     background-position: center;
     position: relative;
 }
+@media screen and (max-width: 1024px) {
+    header {
+        background: url(assets/header.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
 header nav {
     position: absolute;
     top: 0;
