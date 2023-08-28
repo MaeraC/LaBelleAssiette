@@ -2,54 +2,54 @@
     {
         "url": "../assets/1.jpg",
         "name": "Beaumont Croze Hermitage 2021 - Domaine les Bruyères",
-        "price": 16,
+        "price": 22,
         "id": 1
     },
     {
         "url": "../assets/2.jpg",
-        "name": "Beaumont Croze Hermitage 2021 - Domaine les Bruyères",
-        "price": 16,
+        "name": "Chateau LE PUY, Côtes de Francs 2019 ",
+        "price": 32,
         "id": 1
     },
     {
         "url": "../assets/3.jpg",
-        "name": "Beaumont Croze Hermitage 2021 - Domaine les Bruyères",
-        "price": 16,
+        "name": "Psago Cabernet Sauvignon 2019",
+        "price": 39,
         "id": 1
     },
     {
         "url": "../assets/4.jpg",
-        "name": "Beaumont Croze Hermitage 2021 - Domaine les Bruyères",
+        "name": "Val Héritage Grenache 2021 ",
         "price": 16,
         "id": 1
     },
     {
         "url": "../assets/5.jpg",
-        "name": "Beaumont Croze Hermitage 2021 - Domaine les Bruyères",
-        "price": 16,
+        "name": "Château Carbonnieux Grand Cru 2014",
+        "price": 37,
         "id": 1
     },
     {
         "url": "../assets/6.jpg",
-        "name": "Beaumont Croze Hermitage 2021 - Domaine les Bruyères",
-        "price": 16,
+        "name": "Château du Bois-Huaut Augustraminer 2021",
+        "price": 28,
         "id": 1
     },
     {
         "url": "../assets/7.jpg",
-        "name": "Beaumont Croze Hermitage 2021 - Domaine les Bruyères",
-        "price": 16,
+        "name": "L'âme de la Vallée Rouge 2018 - Vallée de Sauve",
+        "price": 46,
         "id": 1
     },
     {
         "url": "../assets/8.jpg",
-        "name": "Beaumont Croze Hermitage 2021 - Domaine les Bruyères",
-        "price": 16,
+        "name": "Cuvée de Printemps - A.0.P Muscadet 2022",
+        "price": 17,
         "id": 1
     },
     {
         "url": "../assets/9.jpg",
-        "name": "Beaumont Croze Hermitage 2021 - Domaine les Bruyères",
+        "name": "Chateau Lalaurie 2018 - Les Vendanges",
         "price": 16,
         "id": 1
     },
