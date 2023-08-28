@@ -254,10 +254,12 @@ header div img {
   }
   .open-burger {
     background: none;
+    width: 30px;
+    transition: 0.3s;
+    cursor: pointer;
   }
-  .header-boutique .open-burger ,
-  .header-menu .open-burger {
-    background: #012b23;
+  .open-burger:hover {
+    transform: scale(0.9);
   }
   .burger-btns {
     display: none;
