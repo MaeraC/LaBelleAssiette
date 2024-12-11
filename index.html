@@ -76,6 +76,45 @@
         </div>
     </section>
 
+    <section class="shopp">
+        <h2>Nos meilleurs vins locaux</h2>
+        <section class="shop">
+        <figure class="appear">
+            <a><img src="./assets/1.jpg" alr="" /></a>
+            <figcaption>
+                <h3>Beaumont Croze Hermitage 2021 - Domaine des Bruyères</h3>
+                <span>22,00€</span>
+                <button class="button">Ajouter au panier</button>
+            </figcaption>
+        </figure>
+        <figure class="appear">
+            <a><img src="./assets/2.jpg" alr="" /></a>
+            <figcaption>
+                <h3>Chateau LE PUY, Côtes de Francs 2019</h3>
+                <span>32,00€</span>
+                <button class="button">Ajouter au panier</button>
+            </figcaption>
+        </figure>
+        <figure class="appear">
+            <a><img src="./assets/3.jpg" alr="" /></a>
+            <figcaption>
+                <h3>Psago Cabernet Sauvignon 2019</h3>
+                <span>39,00€</span>
+                <button class="button">Ajouter au panier</button>
+            </figcaption>
+        </figure>
+        <figure class="appear">
+            <a><img src="./assets/4.jpg" alr="" /></a>
+            <figcaption>
+                <h3>Val Héritage Grenache 2021</h3>
+                <span>16,00€</span>
+                <button class="button">Ajouter au panier</button>
+            </figcaption>
+        </figure>
+        </section>
+        <a href="pages/boutique.html" class="button button2">Voir plus</a>
+    </section>
+
     <section class="avis">
         <h2>Ce que nos clients en disent</h2>
             <div class="content">
@@ -127,7 +166,6 @@
             <h3>Contact</h3>
             <p>01 56 99 86 22<br>
             contact@labelleassiette.fr<br>
-            <span>Réserver une table</span></p>
         </div>
         <div class=" appear" data-delai="400">
             <i class="fa-regular fa-clock"></i>
@@ -150,6 +188,33 @@
     <script src="js/fadeAnim.js"></script>
     <script src="js/openCart.js"></script>
     <script src="js/openReservation.js"></script>
+
+    <!--
+      SMOOTH SCROLL SCRIPT TO PUT INTO THE BODY AT THE END
+    -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+    <script>
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      direction: 'vertical', // vertical, horizontal
+      gestureDirection: 'vertical', // vertical, horizontal, both
+      smooth: true,
+      mouseMultiplier: 1,
+      smoothTouch: false,
+      touchMultiplier: 2,
+      infinite: false,
+    })
+    //get scroll value
+    lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
+      console.log({ scroll, limit, velocity, direction, progress })
+    })
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+    requestAnimationFrame(raf)
+    </script>
     
 </body>
 </html>
