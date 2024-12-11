@@ -326,16 +326,15 @@ header div img {
     }
 }
 @media screen and (max-width: 650px)  {
-    .produits .text p {
-        margin: 20px;
-        margin-bottom: 40px;
-    }
     .produits .text {
-        padding: 20px;
-        padding-bottom: 40px;
+        padding: 50px 30px;
+        padding-bottom: 60px;
     }
-    .produits .text h2 {
-        font-size: 30px;
+    .produits .text p {
+        font-size: 16px;
+    }
+    .produits .button {
+        font-size: 15px;
     }
 }
 @media screen and (max-width: 400px)  {
@@ -413,9 +412,15 @@ header div img {
 }
 @media screen and (max-width: 650px) {
     .avis h2 {
-        font-size: 30px;
-        padding: 40px 10px;
-        padding-bottom: 20px;
+        font-size: 40px;
+        padding-bottom: 30px;
+    }
+    .avis .content {
+        padding: 20px;
+    }
+    .avis .content div {
+        width: 100%;
+        padding: 20px;
     }
 }
 
@@ -535,6 +540,9 @@ footer ul  li {
 @media screen and (max-width: 700px)  {
     .menu li {
         width: 90%;
+    }
+    .nav .menu2 {
+        width: 100%;
     }
 }
 @media screen and (max-width: 500px) {
@@ -661,12 +669,11 @@ footer ul  li {
     }
 }
 @media screen and (max-width: 500px)  {
-    .boutique p , .shop p {
-        margin: 20px;
-        line-height: 25px;
-    }
     .header-boutique h1 {
         font-size: 40px;
+    }
+    .boutique p, .shop p {
+        margin: 50px 30px;
     }
 }
 @media screen and (max-width: 400px)  {
